@@ -8,21 +8,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts for Delicious in Dungeon-inspired look -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Roboto Slab -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* Root variables and general body styling */
         :root {
-            --primary-gold: #c08b3e; /* Warm brass */
-            --light-gold: #e4d2b0; /* Parchment highlight */
-            --soft-cream: #f5efe3; /* Parchment base */
-            --warm-white: #fff8ee; /* Soft parchment */
-            --accent-gold: #b7742f; /* Rustic accent */
-            --dark-text: #3f2b1b; /* Ink brown */
-            --deep-brown: #2c1b0f;
-            --border-ink: rgba(63, 43, 27, 0.35);
-            --font-body: 'Merriweather', serif;
-            --font-display: 'Cinzel', serif;
+            --primary-gold: #c29a31; /* Main accent */
+            --light-gold: #a3a3a3; /* Light neutral */
+            --soft-cream: #f7f4ec; /* Light background tint */
+            --warm-white: #fffdf7; /* Warm white */
+            --accent-gold: #c29a31; /* Main accent */
+            --dark-text: #50391f; /* Dark accent */
             --light-text: #FFFFFF; /* White for text on dark backgrounds */
             --shadow-light: rgba(0, 0, 0, 0.1);
             --shadow-medium: rgba(0, 0, 0, 0.2);
@@ -35,13 +31,12 @@
         body {
             box-sizing: border-box;
             margin: 0;
-            font-family: var(--font-body);
+            font-family: 'Roboto Slab', serif;
             color: var(--dark-text);
             background-image: url('Background.png'); /* Ensure this path is correct */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            background-color: #1f1410;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -404,12 +399,12 @@
             appearance: none; /* Remove default arrow */
             -webkit-appearance: none;
             -moz-appearance: none;
-            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b7742f%22%20d%3D%22M287%2C197.398L146.203%2C56.591L5.405%2C197.398c-3.612%2C3.612-9.45%2C3.612-13.062%2C0c-3.612-3.612-3.612-9.45%2C0-13.062L140%2C43.535c3.612-3.612%2C9.45-3.612%2C13.062%2C0l133.062%2C133.061C290.612%2C187.948%2C290.612%2C193.786%2C287%2C197.398z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23c29a31%22%20d%3D%22M287%2C197.398L146.203%2C56.591L5.405%2C197.398c-3.612%2C3.612-9.45%2C3.612-13.062%2C0c-3.612-3.612-3.612-9.45%2C0-13.062L140%2C43.535c3.612-3.612%2C9.45-3.612%2C13.062%2C0l133.062%2C133.061C290.612%2C187.948%2C290.612%2C193.786%2C287%2C197.398z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: 12px;
             cursor: pointer;
-            font-family: var(--font-body);
+            font-family: 'Roboto Slab', serif;
             color: var(--dark-text);
         }
 
@@ -515,8 +510,8 @@
         }
 
         .modal-content h3 {
-            font-family: var(--font-display);
-            color: var(--accent-gold);
+            font-family: 'Roboto Slab', serif;
+            color: var(--primary-gold);
             margin-bottom: 20px;
             font-size: 1.8em;
         }
@@ -562,7 +557,7 @@
             border: 1px solid #ddd;
             border-radius: var(--border-radius-soft);
             box-sizing: border-box;
-            font-family: var(--font-body);
+            font-family: 'Roboto Slab', serif;
             color: var(--dark-text);
             display: block; /* Ensure inputs take full width */
             margin-left: auto; /* Center input field */
@@ -582,7 +577,7 @@
             text-align: left;
             white-space: pre-wrap; /* Preserve line breaks */
             word-wrap: break-word; /* Break long words */
-            font-family: var(--font-body);
+            font-family: 'Roboto Slab', serif;
             color: var(--dark-text);
             margin-left: auto; /* Center the display box */
             margin-right: auto; /* Center the display box */
@@ -862,7 +857,7 @@
         }
 
         .countdown-container h1 {
-            font-family: var(--font-display);
+            font-family: 'Roboto Slab', serif;
             font-size: 28px; /* Default font size */
             color: var(--primary-gold);
             margin-bottom: 20px;
@@ -890,7 +885,7 @@
 
         .time-box .value {
             font-size: 36px;
-            font-family: var(--font-display);
+            font-family: 'Roboto Slab', serif;
             font-weight: bold;
         }
 
